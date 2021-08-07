@@ -14,9 +14,28 @@
   </head>
 
   <body>
-    <header class="header">
-      這是 header
-    </header>
+    <div class="container">
+      <header class="header my-6 position-relative">
+        <h1 class="header__logo text-primary text-center">EXHIBINECTION</h1>
+        <ul class="nav align-items-center position-absolute h-100 my-auto top-0 end-0">
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link p-0" href="#">Sign in</a>
+          </li>
+          <li class="nav-item d-none d-md-block ms-7">
+            <a class="nav-link p-0" href="#">Sign up</a>
+          </li>
+          <li class="nav-item ms-7">
+            <a class="nav-link p-0 position-relative" href="#"
+              ><span class="material-icons text-black">
+                confirmation_number
+              </span>
+              <span class="cart__qty">1</span>
+              </a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
 
     <%- contents %>
 

@@ -1,0 +1,44 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color-gray": (
+      property: background-color,
+      class: bg-gray,
+      values: $grays,
+    ),
+    "color-gray": (
+      property: color,
+      class: text-gray,
+      values: $grays,
+    ),
+    "border-color-gray": (
+      property: border-color,
+      class: border-gray,
+      values: $grays,
+    ),
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        20: 20%,
+        25: 25%,
+        40: 40%,
+        50: 50%,
+        60: 60%,
+        75: 75%,
+        80: 80%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "max-width": (
+      property: max-width,
+      class: mw,
+      values: (
+        100: 100%,
+        100p: 100px,
+        200p: 200px,
+      )
+    ),
+  )
+);

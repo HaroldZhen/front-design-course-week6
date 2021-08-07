@@ -7,16 +7,17 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #EFEFEF; // #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #707070; // #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:      #000 !default;
+$black-200:#373A3C;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -67,8 +68,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #630834; // $blue !default;
+$secondary:     #E31277; // $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -86,7 +87,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "dark-200":   $dark-200
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -248,14 +250,34 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-) !default;
+  1: $spacer * .25,        //  4px
+  2: $spacer * .5,         //  8px
+  3: $spacer * .75,        // 12px
+  4: $spacer * 1,          // 16px
+  5: $spacer * 1.5,        // 24px
+  6: $spacer * 1.75,       // 28px
+  7: $spacer * 2,          // 32px
+  8: $spacer * 2.125,      // 34px
+  9: $spacer * 2.5,        // 40px
+  10: $spacer * 3,         // 48px
+  'xxs': $spacer * .375,   //  6px
+  'xs': $spacer * .625,    // 10px
+  'mdx1': $spacer * 1.125, // 18px
+  'mdx2': $spacer * 1.25,  // 20px
+  'xl': $spacer * 3.75,    // 60px
+);
+
+// $spacers: (
+//   0: 0,
+//   1: $spacer * .25,
+//   2: $spacer * .5,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+// ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
 // scss-docs-end spacer-variables-maps
@@ -277,7 +299,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $black !default;
 $body-text-align:           null !default;
 
 
@@ -286,7 +308,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none; //underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -441,23 +463,42 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
-// scss-docs-end font-variables
+$h1-font-size:                $font-size-base * 2.25;  // 36px
+$h2-font-size:                $font-size-base * 2;     // 32px
+$h3-font-size:                $font-size-base * 1.25;  // 20px
+$h4-font-size:                $font-size-base;         // 16px
+$h5-font-size:                $font-size-base * 0.875; // 14px
+$h6-font-size:                $font-size-base * 0.75;  // 12px
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
-) !default;
+  1: $h1-font-size,           // 36px
+  2: $h2-font-size,           // 32px
+  3: $font-size-base * 1.5,   // 24px
+  4: $font-size-base * 1.375, // 22px
+  5: $h3-font-size,           // 20px
+  6: $h4-font-size,           // 16px
+  7: $h5-font-size,           // 14px
+  8: $h6-font-size,           // 12px
+);
+
+// Default Font
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
+// scss-docs-end font-variables
+//
+// $font-sizes: (
+//   1: $h1-font-size,
+//   2: $h2-font-size,
+//   3: $h3-font-size,
+//   4: $h4-font-size,
+//   5: $h5-font-size,
+//   6: $h6-font-size
+// ) !default;
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
@@ -476,7 +517,7 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
 ) !default;
 
 $display-font-weight: 300 !default;

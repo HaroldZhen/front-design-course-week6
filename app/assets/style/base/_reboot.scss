@@ -1,6 +1,19 @@
 img {
   vertical-align: middle;
 }
+h1,
+h2 {
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
 .material-icons,
 .material-icons-outlined {
   display: inline-block;
@@ -8,4 +21,9 @@ img {
   line-height: inherit;
   vertical-align: middle;
   transform: translateY(-0.1em);
+}
+input {
+  &::placeholder {
+    color: $gray-600;
+  }
 }

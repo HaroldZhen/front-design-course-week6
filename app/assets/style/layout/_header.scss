@@ -1,0 +1,7 @@
+.header {
+  --font-logo: 1.5rem;
+  &__logo {
+    font-size: var(--font-logo);
+    font-weight: 400;
+  }
+}

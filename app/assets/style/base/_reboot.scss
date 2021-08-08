@@ -25,5 +25,6 @@ ul {
 input {
   &::placeholder {
     color: $gray-600;
+    font-weight: $font-weight-normal;
   }
 }

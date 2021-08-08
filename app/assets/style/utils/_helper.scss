@@ -1,4 +1,12 @@
-.cart__qty {
+.logo {
+  --font-logo: 1.5rem;
+  @include media-breakpoint-down(md) {
+    --font-logo: 1.375rem;
+  }
+  font-size: var(--font-logo);
+  font-weight: 400;
+}
+.shopping__qty {
   position: absolute;
   top: -4px;
   right: -10px;
@@ -14,7 +22,15 @@
     display: none;
   }
 }
-.bg-center-cover{
+.bg-center-cover {
   background-position: center center;
   background-size: cover;
+}
+.image-box {
+  height: 350px;
+  width: 350px;
+}
+.swiper-container {
+  width: 1200px;
+  height: 430px;
 }

@@ -1,0 +1,9 @@
+.product {
+  &__item {
+    padding-top: 5rem; // 80px
+    padding-bottom: 2.75rem; //44px
+    @include media-breakpoint-down(sm) {
+      padding-top: 2.75rem; // 44px
+    }
+  }
+}

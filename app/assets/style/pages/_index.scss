@@ -14,7 +14,8 @@
     transition: background-size 0.15s;
     &:hover,
     &:active,
-    &:focus {
+    &:focus,
+    &.active {
       background-size: 100% 1px;
     }
   }
@@ -27,10 +28,6 @@
     font-weight: $font-weight-bold;
     @include media-breakpoint-down(md) {
       font-size: 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
       flex-direction: row-reverse;
       justify-content: space-between;
       font-weight: $font-weight-medium;

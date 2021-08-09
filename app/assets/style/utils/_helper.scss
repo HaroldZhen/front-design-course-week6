@@ -46,3 +46,12 @@
 .h-400x {
   height: 400px;
 }
+
+@include media-breakpoint-down(md) {
+  .position-md-absolute-top-0-right-0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+  }
+}

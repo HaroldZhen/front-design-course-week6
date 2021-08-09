@@ -6,7 +6,9 @@
 @import './utils/helper';
 @import './utils/utilities';
 
-// Layout
+// components
+@import './components/date';
 
 // Page
 @import './pages/index';
+@import './pages/product';

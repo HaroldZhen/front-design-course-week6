@@ -7,8 +7,8 @@ const swiper = new Swiper('.swiper-container', {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
   // direction: 'vertical',
 });

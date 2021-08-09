@@ -5,6 +5,7 @@
 @import './base/reboot';
 @import './utils/helper';
 @import './utils/utilities';
+@import './utils/mixin';
 
 // components
 @import './components/date';
@@ -12,3 +13,4 @@
 // Page
 @import './pages/index';
 @import './pages/product';
+@import './pages/detail';

@@ -90,6 +90,11 @@ $utilities: map-merge(
         roboto: $font-family-roboto,
       ),
     ),
+    "text-indent": (
+      property: text-indent,
+      class: text-indent,
+      values: $spacers,
+    ),
     "font-weight": (
       property: font-weight,
       class: fw,

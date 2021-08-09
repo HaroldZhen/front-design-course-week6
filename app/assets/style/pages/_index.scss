@@ -12,22 +12,20 @@
     background-size: 0 1px;
     background-repeat: no-repeat;
     transition: background-size 0.15s;
-  }
-  &__link:hover {
-    background-size: 100% 1px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-size: 100% 1px;
+    }
   }
 }
 .hot {
-  &__image {
-    min-height: 350px;
-    min-width: 350px;
-  }
   &__period {
     display: flex;
     flex-direction: column;
     font-size: 1.25rem;
     font-weight: $font-weight-bold;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       font-size: 1rem;
       position: absolute;
       top: 0;
@@ -40,7 +38,7 @@
   }
   &__box {
     width: 39px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       width: auto;
     }
   }
@@ -50,27 +48,16 @@
     background-image: url("../images/people2.png");
     width: 100%;
     height: 482px;
-    z-index: -10;
+    z-index: $zindex-bg-100;
   }
   &__cover {
     padding: 2.5rem 1.25rem;
-    background-color: rgba(#190014, 0.6);
+    background-color: rgba($purple-050, 0.6);
     @include media-breakpoint-down(sm) {
       width: auto;
     }
   }
   &__title {
     font-size: 1.75rem;
-  }
-  &__avatar {
-    width: 128px;
-    height: 128px;
-    background-image: url("../images/people.png");
-  }
-}
-.subscription {
-  &__bg {
-    height: 400px;
-    background-image: url("../images/subscription-bg.jpg");
   }
 }

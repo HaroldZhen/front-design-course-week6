@@ -30,7 +30,19 @@
   height: 350px;
   width: 350px;
 }
+
 .swiper-container {
-  width: 1200px;
+  width: 100%;
+}
+.swiper-slide {
+  width: 350px;
   height: 430px;
+}
+
+.avatar-box {
+  width: 128px;
+  height: 128px;
+}
+.h-400x {
+  height: 400px;
 }

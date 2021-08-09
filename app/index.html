@@ -4,6 +4,7 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+
 <main>
   <section class="hero bg-center-cover">
     <div
@@ -68,7 +69,7 @@ current: index
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
-            class="hot__image bg-center-cover"
+            class="min-h-350 bg-center-cover"
             style="background-image: url('./assets/images/hot-1.jpg');"
           ></div>
         </div>
@@ -118,7 +119,7 @@ current: index
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
-            class="hot__image bg-center-cover"
+            class="min-h-350 bg-center-cover"
             style="background-image: url('./assets/images/hot-2.jpg');"
           ></div>
         </div>
@@ -168,7 +169,7 @@ current: index
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
-            class="hot__image bg-center-cover"
+            class="min-h-350 bg-center-cover"
             style="background-image: url('./assets/images/hot-3.jpg');"
           ></div>
         </div>
@@ -220,16 +221,22 @@ current: index
       <h2 class="mb-2 mb-md-5 fw-bold">直播回顧</h2>
       <div class="text-white liveReview__bg bg-center-cover">
         <div class="row h-100">
-          <div class="col-md-5">
+          <div class="col-md-7 col-lg-5">
             <div class="liveReview__cover h-100 d-flex flex-column">
               <h3 class="liveReview__title mb-md-7">
                 <span class="fw-bold">開幕對談</span>
                 <span class="fw-medium">| 藝術展演巡禮</span>
               </h3>
               <div class="flex-grow-1">
-                <div class="liveReview__avatar mb-md-3"></div>
+                <div
+                  class="avatar-box mb-md-3"
+                  style="background-image: url('./assets/images/people.png');"
+                ></div>
                 <h4 class="mb-md-3 fs-5">臺北現代聯合總監｜Ken Hsu</h4>
-                <p class="fw-light mb-md-4 fs-5">獨家由藝術家、策展人、畫廊總監帶您欣賞台 北藝術特展，感受雕塑、展演及當代日常文化 之間微妙的關係。</p>
+                <p class="fw-light mb-md-4 fs-5">
+                  獨家由藝術家、策展人、畫廊總監帶您欣賞台
+                  北藝術特展，感受雕塑、展演及當代日常文化 之間微妙的關係。
+                </p>
               </div>
               <div>
                 <button class="btn btn-secondary py-xs px-8">點此觀看</button>
@@ -244,7 +251,7 @@ current: index
     <div class="container">
       <h2 class="mb-2 mb-md-5 fw-bold">猜你也喜歡...</h2>
       <div class="row">
-        <div class="col-md-11 offset-md-1 overflow-hidden">
+        <div class="col-lg-11 offset-lg-1 overflow-hidden">
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -252,7 +259,11 @@ current: index
               <div class="swiper-slide">
                 <div>
                   <div class="link__image mb-md-1">
-                    <img src="./assets/images/mustlink-1.jpg" class="image-box object-fit-cover" alt="mustlink-1">
+                    <img
+                      src="./assets/images/mustlink-1.jpg"
+                      class="image-box object-fit-cover"
+                      alt="mustlink-1"
+                    />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
                   <p class="mb-2 fs-5">$350</p>
@@ -261,7 +272,11 @@ current: index
               <div class="swiper-slide">
                 <div>
                   <div class="mb-md-1">
-                    <img src="./assets/images/mustlink-2.jpg" class="image-box object-fit-cover" alt="mustlink-2">
+                    <img
+                      src="./assets/images/mustlink-2.jpg"
+                      class="image-box object-fit-cover"
+                      alt="mustlink-2"
+                    />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
                   <p class="mb-2 fs-5">$350</p>
@@ -270,44 +285,19 @@ current: index
               <div class="swiper-slide">
                 <div>
                   <div class="mb-md-1">
-                    <img src="./assets/images/mustlink-3.jpg" class="image-box object-fit-cover" alt="mustlink-3">
+                    <img
+                      src="./assets/images/mustlink-3.jpg"
+                      class="image-box object-fit-cover"
+                      alt="mustlink-3"
+                    />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
-                  <p class="mb-2 fs-5">$350</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="mb-md-1">
-                    <img src="./assets/images/mustlink-1.jpg" class="image-box object-fit-cover" alt="mustlink-1">
-                  </div>
-                  <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
-                  <p class="mb-2 fs-5">$350</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="mb-md-1">
-                    <img src="./assets/images/mustlink-2.jpg" class="image-box object-fit-cover" alt="mustlink-2">
-                  </div>
-                  <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
-                  <p class="mb-2 fs-5">$350</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div>
-                  <div class="mb-md-1">
-                    <img src="./assets/images/mustlink-3.jpg" class="image-box object-fit-cover" alt="mustlink-3">
-                  </div>
-                  <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
-                  <p class="mb-2 fs-5">$350</p>
+                  <p class="mb-2 fs-5">$351</p>
                 </div>
               </div>
             </div>
-            <!-- If we need pagination -->
+            <!-- swiper pagination -->
             <div class="swiper-pagination"></div>
-          
-            <!-- If we need scrollbar -->
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </div>

@@ -18,6 +18,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:      #000 !default;
 $black-200:#373A3C;
+$purple-050: #190014;
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -967,6 +968,7 @@ $zindex-offcanvas:                  1050 !default;
 $zindex-modal:                      1060 !default;
 $zindex-popover:                    1070 !default;
 $zindex-tooltip:                    1080 !default;
+$zindex-bg-100: -100;
 // scss-docs-end zindex-stack
 
 

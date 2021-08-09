@@ -1,7 +1,7 @@
 console.log('Hello!');
 const swiper = new Swiper('.swiper-container', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 15,
   pagination: {
     el: ".swiper-pagination",
@@ -10,4 +10,5 @@ const swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 2000,
   },
+  // direction: 'vertical',
 });

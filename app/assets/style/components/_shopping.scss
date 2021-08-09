@@ -1,6 +1,6 @@
 .shopping {
   &__sidebar {
-    margin-top: 5.25rem;
+    margin-top: 5.125rem;
   }
   &__item {
     padding: 1.75rem 2rem 1.5rem 2rem;
@@ -27,6 +27,10 @@
     width: 120px;
     height: 120px;
   }
+  &__productImg2 {
+    width: 160px;
+    height: 84px;
+  }
   &__footer {
     padding: 0 2rem 2rem;
     @include media-breakpoint-down(lg) {
@@ -51,6 +55,38 @@
     &:focus {
       background-color: $secondary !important;
       color: $white !important;
+    }
+  }
+}
+.checkout {
+  &__item {
+    padding-left: map-get($spacers, "gutter2");
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      height: 100%;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+  }
+  &__close,
+  &__price,
+  &__small {
+    @include media-breakpoint-down(sm) {
+      line-height: 1;
+    }
+  }
+  &__wrap {
+    min-height: 520px;
+    overflow-y: auto;
+    @include media-breakpoint-down(sm) {
+      min-height: 0px;
     }
   }
 }

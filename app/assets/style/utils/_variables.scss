@@ -253,7 +253,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-$custom-grid-gutter-width:  $spacer * 1.5;
+$custom-grid-gutter-width:  $spacer * 1.875;// $spacer * 1.5;
 
 $spacers: (
   0: 0,
@@ -276,8 +276,8 @@ $spacers: (
   'mdx4': $spacer * 2.25,  // 36px
   'xl': $spacer * 3.75,    // 60px
   'xxl': $spacer * 5,    // 80px
-  'gutter1': $custom-grid-gutter-width / 2, // 24px
-  'gutter2': $custom-grid-gutter-width, // 24px
+  'gutter1': $custom-grid-gutter-width / 2, // 15px
+  'gutter2': $custom-grid-gutter-width, // 30px
 );
 
 // $spacers: (

@@ -1,0 +1,176 @@
+---
+title: 藝術展覽 - 結帳1
+layout: ./app/checkOutLayout.ejs
+engine: ejs
+current: detail
+---
+
+<main>
+  <section class="progressBar pt-mdx2 pb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <ul class="nav d-flex progressBar__line justify-content-between">
+            <li class="nav-item progressBar__item active">
+              確認訂單
+            </li>
+            <li class="nav-item progressBar__item">
+              填寫訂購資訊
+            </li>
+            <li class="nav-item progressBar__item">
+              填寫付款資訊
+            </li>
+            <li class="nav-item progressBar__item">
+              完成訂購
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container pb-9">
+      <div class="row">
+        <div class="col-lg-8 checkout__wrap">
+          <ul class="d-flex flex-column">
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-1.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-1"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="checkout__small fw-normal fs-6 text-gray-600"
+                  >全票</small
+                >
+              </div>
+              <div class="d-flex checkout__item">
+                <div>
+                  <span class="material-icons checkout__close">
+                    close
+                  </span>
+                </div>
+
+                <ul
+                  class="d-none d-sm-flex justify-content-between justify-content-md-center align-items-center font-roboto fw-bold fs-5 lh-1"
+                >
+                  <li>
+                    <span class="material-icons">
+                      remove
+                    </span>
+                  </li>
+                  <li class="px-md-3">01</li>
+                  <li>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </li>
+                </ul>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-2.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-2"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="checkout__small fw-normal fs-6 text-gray-600"
+                  >全票</small
+                >
+              </div>
+              <div class="d-flex checkout__item">
+                <div>
+                  <span class="material-icons checkout__close">
+                    close
+                  </span>
+                </div>
+
+                <ul
+                  class="d-none d-sm-flex justify-content-between justify-content-md-center align-items-center font-roboto fw-bold fs-5 lh-1"
+                >
+                  <li>
+                    <span class="material-icons">
+                      remove
+                    </span>
+                  </li>
+                  <li class="px-md-3">01</li>
+                  <li>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </li>
+                </ul>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-3.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-3"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="checkout__small fw-normal fs-6 text-gray-600"
+                  >全票</small
+                >
+              </div>
+              <div class="d-flex checkout__item">
+                <div>
+                  <span class="material-icons checkout__close">
+                    close
+                  </span>
+                </div>
+
+                <ul
+                  class="d-none d-sm-flex justify-content-between justify-content-md-center align-items-center font-roboto fw-bold fs-5 lh-1"
+                >
+                  <li>
+                    <span class="material-icons">
+                      remove
+                    </span>
+                  </li>
+                  <li class="px-md-3">01</li>
+                  <li>
+                    <span class="material-icons">
+                      add
+                    </span>
+                  </li>
+                </ul>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mt-xxl">
+          <div class="d-flex flex-column flex-md-row h-100 flex-md-column justify-content-md-end">
+            <div class="d-flex justify-content-between mb-3 fs-5 fw-medium">
+              <p class="mb-0">小計：</p>
+              <p class="mb-0 font-roboto">NT$1050</p>
+            </div>
+            <button class="btn btn-secondary w-100 pt-xs">下一步</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

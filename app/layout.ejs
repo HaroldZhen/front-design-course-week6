@@ -24,7 +24,9 @@
           <a class="nav-link p-0" href="#">Sign up</a>
         </li>
         <li class="nav-item ms-7">
-          <a class="nav-link p-0 position-relative" href="#"><span class="material-icons text-black">
+          <a class="nav-link p-0 position-relative" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <span class="material-icons text-black">
               confirmation_number
             </span>
             <span class="shopping__qty">1</span>
@@ -34,22 +36,16 @@
     </header>
   </div>
   <section class="hero bg-center-cover <%= current !== 'index' && 'd-none' %>">
-    <div
-      class="container h-100 text-white d-flex align-items-end align-items-md-center pb-xxl pb-md-0"
-    >
+    <div class="container h-100 text-white d-flex align-items-end align-items-md-center pb-xxl pb-md-0">
       <div class="row flex-grow-1">
         <div class="col-md-11 ms-auto">
           <h2 class="mb-2">台北當代藝術展</h2>
           <p class="fs-5 fw-bold mb-4">01 JUN - 31 OCT</p>
           <div class="d-flex">
-            <button
-              class="btn btn-secondary px-md-10 py-xs me-2 min-w-50 min-w-md-auto"
-            >
+            <button class="btn btn-secondary px-md-10 py-xs me-2 min-w-50 min-w-md-auto">
               購買票券
             </button>
-            <button
-              class="btn btn-outline-white px-md-10 py-xs min-w-50 min-w-md-auto"
-            >
+            <button class="btn btn-outline-white px-md-10 py-xs min-w-50 min-w-md-auto">
               詳細資訊
             </button>
           </div>
@@ -58,9 +54,7 @@
     </div>
   </section>
   <div class="overflow-auto">
-    <ul
-      class="mainMenu nav justify-content-center border border-1 border-gray-600 flex-nowrap"
-    >
+    <ul class="mainMenu nav justify-content-center border border-1 border-gray-600 flex-nowrap">
       <li class="nav-item me-mdx1">
         <a class="nav-link mainMenu__link py-ss" href="#">音樂</a>
       </li>
@@ -103,11 +97,7 @@
               <div class="swiper-slide">
                 <div>
                   <div class="link__image mb-md-1">
-                    <img
-                      src="./assets/images/mustlink-1.jpg"
-                      class="image-box object-fit-cover"
-                      alt="mustlink-1"
-                    />
+                    <img src="./assets/images/mustlink-1.jpg" class="image-box object-fit-cover" alt="mustlink-1" />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
                   <p class="mb-2 fs-5">$350</p>
@@ -116,11 +106,7 @@
               <div class="swiper-slide">
                 <div>
                   <div class="mb-md-1">
-                    <img
-                      src="./assets/images/mustlink-2.jpg"
-                      class="image-box object-fit-cover"
-                      alt="mustlink-2"
-                    />
+                    <img src="./assets/images/mustlink-2.jpg" class="image-box object-fit-cover" alt="mustlink-2" />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
                   <p class="mb-2 fs-5">$350</p>
@@ -129,11 +115,7 @@
               <div class="swiper-slide">
                 <div>
                   <div class="mb-md-1">
-                    <img
-                      src="./assets/images/mustlink-3.jpg"
-                      class="image-box object-fit-cover"
-                      alt="mustlink-3"
-                    />
+                    <img src="./assets/images/mustlink-3.jpg" class="image-box object-fit-cover" alt="mustlink-3" />
                   </div>
                   <h3 class="fs-5 fw-bold mb-1">No.22 線上設計展</h3>
                   <p class="mb-2 fs-5">$350</p>
@@ -148,7 +130,8 @@
       </div>
     </div>
   </section>
-  <section class="h-400x bg-center-cover mt-5  mt-md-xl" style="background-image: url('./assets/images/subscription-bg.jpg');">
+  <section class="h-400x bg-center-cover mt-5  mt-md-xl"
+    style="background-image: url('./assets/images/subscription-bg.jpg');">
     <div class="container h-100">
       <div class="row h-100 flex-column justify-content-end pb-mdx4">
         <div class="col-md-5 text-white mb-5 mb-md-3">
@@ -185,8 +168,103 @@
       </div>
     </div>
   </footer>
+
+  <div class="shopping__sidebar offcanvas show offcanvas-end bg-black" tabindex="-1" id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header px-4 px-lg-7 pb-3">
+      <h5 id="offcanvasRightLabel" class="fs-3 fs-lg-2 text-white mb-0">Cart List</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ps-4 ps-lg-7 pt-0 scrollbar pe-0 pb-0">
+      <ul class="d-flex flex-column">
+        <li class="d-flex shopping__item position-relative">
+          <div class="shopping__close"><span class="material-icons">
+            close
+            </span></div>
+          <div class="flex-shrink-0 me-4">
+            <img src="./assets/images/hot-1.jpg" class="shopping__productImg object-cover" alt="...">
+          </div>
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <p class="mb-1">2020 台味設計展</p>
+            <p class="mb-1">01 JUN — 31 OCT</p>
+            <small class="fw-normal flex-grow-1">全票</small>
+            <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+          </div>
+          <div class="flex-grow-md-1 d-flex align-items-center">
+            <ul class="d-flex flex-column-reverse flex-md-row w-100 align-items-center justify-content-around font-roboto fw-bold fs-5">
+              <li><span class="material-icons">
+                remove
+                </span></li>
+              <li class="px-md-3">01</li>
+              <li><span class="material-icons">
+                add
+                </span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="d-flex shopping__item position-relative">
+          <div class="shopping__close"><span class="material-icons">
+            close
+            </span></div>
+          <div class="flex-shrink-0 me-4">
+            <img src="./assets/images/hot-2.jpg" class="shopping__productImg object-cover" alt="hot-2">
+          </div>
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <p class="mb-1">2020 台味設計展</p>
+            <p class="mb-1">01 JUN — 31 OCT</p>
+            <small class="fw-normal flex-grow-1">全票</small>
+            <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+          </div>
+          <div class="flex-grow-md-1 d-flex align-items-center">
+            <ul class="d-flex flex-column-reverse align-items-center flex-md-row w-100 justify-content-around font-roboto fw-bold fs-5">
+              <li><span class="material-icons">
+                remove
+                </span></li>
+                <li class="px-md-3">01</li>
+              <li><span class="material-icons">
+                add
+                </span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="d-flex shopping__item position-relative">
+          <div class="shopping__close"><span class="material-icons">
+            close
+            </span></div>
+          <div class="flex-shrink-0 me-4">
+            <img src="./assets/images/hot-3.jpg" class="shopping__productImg object-cover" alt="hot-3">
+          </div>
+          <div class="flex-grow-1 d-flex flex-column justify-content-between">
+            <p class="mb-1">2020 台味設計展</p>
+            <p class="mb-1">01 JUN — 31 OCT</p>
+            <small class="fw-normal flex-grow-1">全票</small>
+            <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+          </div>
+          <div class="flex-grow-md-1 d-flex align-items-center">
+            <ul class="d-flex flex-column-reverse align-items-center flex-md-row w-100 justify-content-lg-around font-roboto fw-bold fs-5">
+              <li><span class="material-icons">
+                remove
+                </span></li>
+                <li class="px-md-3">01</li>
+              <li><span class="material-icons">
+                add
+                </span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="offcanvas-footer shopping__footer mt-mdx2">
+      <div class="d-flex text-white fs-5">
+        <p class="mb-0">小計</p>
+        <p class="mb-0 ms-5">NT$1050</p>
+        <button class="btn btn-outline-primary bg-white ms-auto shopping__btn">前往結帳</button>
+      </div>
+    </div>
+  </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
+
 </html>

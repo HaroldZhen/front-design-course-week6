@@ -55,3 +55,30 @@
     width: 50%;
   }
 }
+
+.scrollbar {
+  $_width: 32px;
+  $_size: 2px;
+  $_width-sm: 16px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar-track {
+    background-color: $black;
+  }
+  &::-webkit-scrollbar {
+    width: $_width;
+    background-color: $black;
+    @include media-breakpoint-down(md) {
+      width: $_width-sm;
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary;
+    border-left: ($_width/2 - $_size) $black solid;
+    border-right: ($_width/2 - $_size) $black solid;
+    @include media-breakpoint-down(md) {
+      border-left: ($_size * 2) $black solid;
+      border-right: ($_width-sm - $_size * 3) $black solid;
+    }
+    background-clip: padding-box;
+  }
+}

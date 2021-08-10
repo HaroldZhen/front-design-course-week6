@@ -4,12 +4,34 @@
   height: 480px;
 }
 .mainMenu {
-  z-index: 1;
-  min-width: 820px;
+  // z-index: 1;
+  // min-width: 820px;
   &__link {
     @include link-style(40px);
   }
 }
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 3.25rem;
+  overflow-y: hidden;
+  & .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 0.25rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    @include media-breakpoint-down(md) {
+      justify-content: start;
+    }
+  }
+}
+
+
 .liveReview {
   &__bg {
     background-image: url("../images/people2.png");

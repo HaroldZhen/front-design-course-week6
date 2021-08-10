@@ -107,6 +107,18 @@ $utilities: map-merge(
         bolder: $font-weight-bolder,
       ),
     ),
+    "white-space": (
+      property: white-space,
+      class: white-space,
+      values: (
+        normal,
+        pre,
+        nowrap,
+        pre-wrap,
+        pre-line,
+        inherit,
+      ),
+    ),
     "object-fit": (
       property: object-fit,
       class: object,

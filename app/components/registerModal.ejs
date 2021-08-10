@@ -1,0 +1,109 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="registerModal"
+  tabindex="-1"
+  aria-labelledby="registerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="registerModalLabel">註冊 Sing up</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">姓名</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerName"
+              placeholder="請輸入你的姓名"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">電子郵件</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerEmail"
+              placeholder="請輸入你的電子郵件"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPhoneNumber" class="form-label">手機</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerPhoneNumber"
+              placeholder="請輸入你的手機號碼"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerBday" class="form-label">生日</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerBday"
+              placeholder="請輸入你的生日"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control"
+              id="registerPassword"
+              placeholder="請輸入你的密碼"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPasswordCheck" class="form-label"
+              >密碼確認</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="registerPasswordCheck"
+              placeholder="再一次輸入密碼"
+            />
+          </div>
+          <button
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-secondary btn-lg my-3 rounded-pill w-100"
+            onclick="registerMsg()"
+          >
+            加入會員
+          </button>
+        </form>
+        <div class="position-relative my-4">
+          <div class="progress" style="height: 2px">
+            <div
+              class="progress-bar bg-light"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <p
+            class="text-decoration-none position-absolute top-0 start-50 translate-middle px-3 bg-white fs-6 text-gray-600 d-flex justify-content-center white-space-nowrap"
+          >
+            我已經有會員帳號了?<a href="#" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary">來去登入</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

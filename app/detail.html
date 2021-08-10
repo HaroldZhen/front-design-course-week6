@@ -3,6 +3,7 @@ title: 藝術展覽 - 明細
 layout: ./app/mainLayout.ejs
 engine: ejs
 current: detail
+category: design
 ---
 
 <main>
@@ -72,11 +73,12 @@ current: detail
             <div class="col-12 mt-9">
               <div class="d-flex">
                 <button
-                  class="btn btn-outline-secondary  py-xs me-mdx3 flex-grow-1"
+                  class="btn btn-outline-secondary py-xs me-mdx3 flex-grow-1"
+                  onclick="favoriteShow()"
                 >
                   收藏展覽
                 </button>
-                <button class="btn btn-secondary  py-xs flex-grow-1">
+                <button onclick="addProductMsg()" class="btn btn-secondary py-xs flex-grow-1">
                   購買票券
                 </button>
               </div>

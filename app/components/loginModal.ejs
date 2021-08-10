@@ -1,0 +1,75 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="loginModalLabel">登入 Sing in</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">帳號</label>
+            <input
+              type="email"
+              class="form-control"
+              id="loginEmail"
+              aria-describedby="emailHelp"
+              placeholder="請輸入你的電子信箱"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control"
+              id="loginPassword"
+              placeholder="請輸入你的密碼"
+            />
+          </div>
+          <a href="#" data-bs-target="#forgotPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary text-decoration-none my-3 fw-light"
+            >忘記密碼</a
+          >
+          <button
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-secondary btn-lg my-3 rounded-pill w-100"
+            onclick="loginMsg()"
+          >
+            登入
+          </button>
+        </form>
+        <div class="position-relative my-4">
+          <div class="progress" style="height: 2px">
+            <div
+              class="progress-bar bg-light"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <p
+            class="text-decoration-none position-absolute top-0 start-50 translate-middle px-3 bg-white fs-6 text-gray-600"
+          >
+            還沒有帳號？ <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary">註冊一個帳號</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

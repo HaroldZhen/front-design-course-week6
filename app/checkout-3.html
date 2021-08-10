@@ -1,0 +1,172 @@
+---
+title: 藝術展覽 - 結帳3
+layout: ./app/checkOutLayout.ejs
+engine: ejs
+current: detail
+---
+
+<main>
+  <section class="progressBar pt-mdx2 pb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <ul class="nav d-flex progressBar__line justify-content-between">
+            <li class="nav-item progressBar__item">
+              確認訂單
+            </li>
+            <li class="nav-item progressBar__item">
+              填寫訂購資訊
+            </li>
+            <li class="nav-item progressBar__item active">
+              填寫付款資訊
+            </li>
+            <li class="nav-item progressBar__item">
+              完成訂購
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container pb-9">
+      <div class="row">
+        <div class="col-lg-6 order-lg-first">
+          <ul class="d-flex flex-column">
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-1.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-1"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0 me-">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-2.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-2"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-3.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-3"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 offset-lg-2 order-first mb-5 mb-lg-0">
+          <div
+            class="d-flex flex-column h-100 flex-md-column justify-content-md-between"
+          >
+            <div class="mb-md-xxl">
+              <h3 class="mb-mdx2">付款資訊</h3>
+              <div class="mb-mdx2">
+                <label for="credit" class="form-label mb-1">信用卡帳號</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="credit"
+                  placeholder="xxxx-xxxx-xxxx-xxxx"
+                />
+              </div>
+              <div class="mb-mdx2">
+                <label for="expiryDate" class="form-label mb-1">有效日期</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="expiryDate"
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div class="mb-mdx2">
+                <label for="cvc" class="form-label mb-1">安全碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cvc"
+                  placeholder="***"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-6 fw-medium mb-1 mb-md-xxs"
+            >
+              <p class="mb-0">小計：</p>
+              <p class="mb-0 font-roboto fw-light">NT$1050</p>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-6 fw-medium mb-1 mb-md-xxs"
+            >
+              <p class="mb-0">折扣：</p>
+              <p class="mb-0 font-roboto fw-light">-NT$50</p>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-5 fw-medium mb-0 mb-lg-xxs"
+            >
+              <p class="mb-0">總金額</p>
+              <p class="mb-0 font-roboto">NT$1000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-10 mt-lg-3">
+          <div class="row">
+            <div class="col-6 col-lg-2">
+              <a
+                href="./checkout-1.html"
+                class="btn btn-outline-secondary w-100 pt-xs"
+              >
+                返回
+              </a>
+            </div>
+            <div class="ms-auto col-6 col-lg-4">
+              <a href="./checkout-3.html" class="btn btn-secondary w-100 pt-xs"
+                >下一步</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

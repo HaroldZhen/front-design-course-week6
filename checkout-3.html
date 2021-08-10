@@ -24,10 +24,22 @@
         class="nav align-items-center position-absolute h-100 my-auto top-0 end-0"
       >
         <li class="nav-item d-none d-md-block">
-          <a class="nav-link p-0" href="#">Sign in</a>
+          <a
+            class="nav-link p-0"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            >Sign in</a
+          >
         </li>
         <li class="nav-item d-none d-md-block ms-7">
-          <a class="nav-link p-0" href="#">Sign up</a>
+          <a
+            class="nav-link p-0"
+            href="#"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+            >Sign up</a
+          >
         </li>
         <li class="nav-item ms-7">
           <a
@@ -106,7 +118,7 @@
                 />
               </div>
               <div class="d-flex flex-column justify-content-between">
-                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">No.22 線上設計展</p>
                 <p class="mb-1">01 JUN — 31 OCT</p>
                 <small class="fw-normal fs-6 text-gray-600">全票</small>
               </div>
@@ -126,7 +138,7 @@
                 />
               </div>
               <div class="d-flex flex-column justify-content-between">
-                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">高雄設計節</p>
                 <p class="mb-1">01 JUN — 31 OCT</p>
                 <small class="fw-normal fs-6 text-gray-600">全票</small>
               </div>
@@ -285,7 +297,7 @@
           />
         </div>
         <div class="flex-grow-1 d-flex flex-column justify-content-between">
-          <p class="mb-1">2020 台味設計展</p>
+          <p class="mb-1">No.22 線上設計展</p>
           <p class="mb-1">01 JUN — 31 OCT</p>
           <small class="fw-normal flex-grow-1">全票</small>
           <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
@@ -322,7 +334,7 @@
           />
         </div>
         <div class="flex-grow-1 d-flex flex-column justify-content-between">
-          <p class="mb-1">2020 台味設計展</p>
+          <p class="mb-1">高雄設計節</p>
           <p class="mb-1">01 JUN — 31 OCT</p>
           <small class="fw-normal flex-grow-1">全票</small>
           <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
@@ -356,6 +368,298 @@
         class="btn btn-outline-primary bg-white ms-auto shopping__btn"
         >前往結帳</a
       >
+    </div>
+  </div>
+</div>
+
+  <!-- Modal -->
+<div
+  class="modal fade"
+  id="loginModal"
+  tabindex="-1"
+  aria-labelledby="loginModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="loginModalLabel">登入 Sing in</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">帳號</label>
+            <input
+              type="email"
+              class="form-control"
+              id="loginEmail"
+              aria-describedby="emailHelp"
+              placeholder="請輸入你的電子信箱"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control"
+              id="loginPassword"
+              placeholder="請輸入你的密碼"
+            />
+          </div>
+          <a href="#" data-bs-target="#forgotPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary text-decoration-none my-3 fw-light"
+            >忘記密碼</a
+          >
+          <button
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-secondary btn-lg my-3 rounded-pill w-100"
+            onclick="loginMsg()"
+          >
+            登入
+          </button>
+        </form>
+        <div class="position-relative my-4">
+          <div class="progress" style="height: 2px">
+            <div
+              class="progress-bar bg-light"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <p
+            class="text-decoration-none position-absolute top-0 start-50 translate-middle px-3 bg-white fs-6 text-gray-600"
+          >
+            還沒有帳號？ <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary">註冊一個帳號</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="registerModal"
+  tabindex="-1"
+  aria-labelledby="registerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="registerModalLabel">註冊 Sing up</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="registerName" class="form-label">姓名</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerName"
+              placeholder="請輸入你的姓名"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">電子郵件</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerEmail"
+              placeholder="請輸入你的電子郵件"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPhoneNumber" class="form-label">手機</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerPhoneNumber"
+              placeholder="請輸入你的手機號碼"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerBday" class="form-label">生日</label>
+            <input
+              type="email"
+              class="form-control"
+              id="registerBday"
+              placeholder="請輸入你的生日"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">密碼</label>
+            <input
+              type="password"
+              class="form-control"
+              id="registerPassword"
+              placeholder="請輸入你的密碼"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="registerPasswordCheck" class="form-label"
+              >密碼確認</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="registerPasswordCheck"
+              placeholder="再一次輸入密碼"
+            />
+          </div>
+          <button
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-secondary btn-lg my-3 rounded-pill w-100"
+            onclick="registerMsg()"
+          >
+            加入會員
+          </button>
+        </form>
+        <div class="position-relative my-4">
+          <div class="progress" style="height: 2px">
+            <div
+              class="progress-bar bg-light"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <p
+            class="text-decoration-none position-absolute top-0 start-50 translate-middle px-3 bg-white fs-6 text-gray-600 d-flex justify-content-center white-space-nowrap"
+          >
+            我已經有會員帳號了?<a href="#" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary">來去登入</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="forgotPasswordModal"
+  tabindex="-1"
+  aria-labelledby="forgotPasswordModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="forgotPasswordModalLabel">忘記密碼</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="fs-4 fw-normal text-center py-5">請輸入您的註冊電子郵件，我們將會寄送『重新設定密碼』連結給您進行密碼設定。</h5>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">註冊信箱</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="請輸入你註冊的電子信箱"
+            />
+          </div>
+          <button
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-secondary btn-lg my-3 rounded-pill w-100"
+          >
+            確定送出
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  aria-labelledby="videoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div
+      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary" style="width: 600px;"
+    >
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 text-primary" id="videoModalLabel">
+          直播回顧
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TXQcLsqUTqs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZkDPqgwZts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/r_PgrPKUjcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>

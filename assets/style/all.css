@@ -6547,6 +6547,9 @@ textarea.form-control-lg {
 .top-0 {
   top: 0 !important; }
 
+.top-25 {
+  top: 25% !important; }
+
 .top-50 {
   top: 50% !important; }
 
@@ -6555,6 +6558,9 @@ textarea.form-control-lg {
 
 .bottom-0 {
   bottom: 0 !important; }
+
+.bottom-25 {
+  bottom: 25% !important; }
 
 .bottom-50 {
   bottom: 50% !important; }
@@ -6565,6 +6571,9 @@ textarea.form-control-lg {
 .start-0 {
   left: 0 !important; }
 
+.start-25 {
+  left: 25% !important; }
+
 .start-50 {
   left: 50% !important; }
 
@@ -6573,6 +6582,9 @@ textarea.form-control-lg {
 
 .end-0 {
   right: 0 !important; }
+
+.end-25 {
+  right: 25% !important; }
 
 .end-50 {
   right: 50% !important; }
@@ -8143,11 +8155,23 @@ textarea.form-control-lg {
 .text-capitalize {
   text-transform: capitalize !important; }
 
-.text-wrap {
+.white-space-normal {
   white-space: normal !important; }
 
-.text-nowrap {
+.white-space-pre {
+  white-space: pre !important; }
+
+.white-space-nowrap {
   white-space: nowrap !important; }
+
+.white-space-pre-wrap {
+  white-space: pre-wrap !important; }
+
+.white-space-pre-line {
+  white-space: pre-line !important; }
+
+.white-space-inherit {
+  white-space: inherit !important; }
 
 /* rtl:begin:remove */
 .text-break {
@@ -13889,7 +13913,6 @@ input::placeholder {
     .shopping__item {
       padding: 2.25rem 1rem 1rem; } }
   .shopping__item:hover {
-    border-color: #E31277;
     background-color: #fcfcfc; }
 
 .shopping__item + .shopping__item {

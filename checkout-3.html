@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>藝術展覽 - 結帳3</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body>
+  <div class="topNavBar border-bottom border-gray-600">
+  <div class="container">
+    <header class="my-6 position-relative">
+      <h1 class="logo text-primary text-center">
+        <a href="./index.html" class="text-reset">EXHIBINECTION</a>
+      </h1>
+      <ul
+        class="nav align-items-center position-absolute h-100 my-auto top-0 end-0"
+      >
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link p-0" href="#">Sign in</a>
+        </li>
+        <li class="nav-item d-none d-md-block ms-7">
+          <a class="nav-link p-0" href="#">Sign up</a>
+        </li>
+        <li class="nav-item ms-7">
+          <a
+            class="nav-link p-0 position-relative"
+            href="#"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <span class="material-icons text-black">
+              confirmation_number
+            </span>
+            <span class="shopping__qty">1</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+  </div>
+</div>
+
+  
+<main>
+  <section class="progressBar pt-mdx2 pb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <ul class="nav d-flex progressBar__line justify-content-between">
+            <li class="nav-item progressBar__item">
+              確認訂單
+            </li>
+            <li class="nav-item progressBar__item">
+              填寫訂購資訊
+            </li>
+            <li class="nav-item progressBar__item active">
+              填寫付款資訊
+            </li>
+            <li class="nav-item progressBar__item">
+              完成訂購
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container pb-9">
+      <div class="row">
+        <div class="col-lg-6 order-lg-first">
+          <ul class="d-flex flex-column">
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-1.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-1"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0 me-">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-2.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-2"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+            <li class="d-flex shopping__item p-0 position-relative">
+              <div class="flex-shrink-0 me-gutter1 me-lg-gutter1">
+                <img
+                  src="./assets/images/hot-3.jpg"
+                  class="shopping__productImg2 object-cover"
+                  alt="hot-3"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-1">2020 台味設計展</p>
+                <p class="mb-1">01 JUN — 31 OCT</p>
+                <small class="fw-normal fs-6 text-gray-600">全票</small>
+              </div>
+              <div class="d-flex checkout__itemRead">
+                <p class="font-roboto fw-bold fs-5 mb-0">1</p>
+                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                  NT$350
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4 offset-lg-2 order-first mb-5 mb-lg-0">
+          <div
+            class="d-flex flex-column h-100 flex-md-column justify-content-md-between"
+          >
+            <div class="mb-9 mb-lg-xxl pb-3 pb-lg-xxl">
+              <h3 class="mb-mdx2">付款資訊</h3>
+              <div class="mb-mdx2">
+                <label for="credit" class="form-label mb-1">信用卡帳號</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="credit"
+                  placeholder="xxxx-xxxx-xxxx-xxxx"
+                />
+              </div>
+              <div class="mb-mdx2">
+                <label for="expiryDate" class="form-label mb-1">有效日期</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="expiryDate"
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div class="mb-mdx2">
+                <label for="cvc" class="form-label mb-1">安全碼</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cvc"
+                  placeholder="***"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-6 fw-medium mb-1 mb-md-xxs"
+            >
+              <p class="mb-0">小計：</p>
+              <p class="mb-0 font-roboto fw-light">NT$1050</p>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-6 fw-medium mb-1 mb-md-xxs"
+            >
+              <p class="mb-0">折扣：</p>
+              <p class="mb-0 font-roboto fw-light">-NT$50</p>
+            </div>
+            <div
+              class="d-flex justify-content-between fs-5 fw-medium mb-0 mb-lg-xxs"
+            >
+              <p class="mb-0">總金額</p>
+              <p class="mb-0 font-roboto">NT$1000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-10 mt-lg-3">
+          <div class="row">
+            <div class="col-6 col-lg-2">
+              <a
+                href="./checkout-2.html"
+                class="btn btn-outline-secondary w-100 pt-xs"
+              >
+                返回
+              </a>
+            </div>
+            <div class="ms-auto col-6 col-lg-4">
+              <a href="./checkout-4.html" class="btn btn-secondary w-100 pt-xs"
+                >下一步</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <div
+  class="shopping__sidebar offcanvas offcanvas-end bg-black"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header px-4 px-lg-7 pb-3">
+    <h5 id="offcanvasRightLabel" class="fs-3 fs-lg-2 text-white mb-0">
+      Cart List
+    </h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body ps-4 ps-lg-7 pt-0 scrollbar pe-0 pb-0">
+    <ul class="d-flex flex-column">
+      <li class="d-flex shopping__item position-relative">
+        <div class="shopping__close">
+          <span class="material-icons">
+            close
+          </span>
+        </div>
+        <div class="flex-shrink-0 me-4">
+          <img
+            src="./assets/images/hot-1.jpg"
+            class="shopping__productImg object-cover"
+            alt="..."
+          />
+        </div>
+        <div class="flex-grow-1 d-flex flex-column justify-content-between">
+          <p class="mb-1">2020 台味設計展</p>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <small class="fw-normal flex-grow-1">全票</small>
+          <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+        </div>
+        <div class="flex-grow-md-1 d-flex align-items-center">
+          <ul
+            class="d-flex flex-column-reverse flex-md-row w-100 align-items-center justify-content-around font-roboto fw-bold fs-5"
+          >
+            <li>
+              <span class="material-icons">
+                remove
+              </span>
+            </li>
+            <li class="px-md-3">01</li>
+            <li>
+              <span class="material-icons">
+                add
+              </span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="d-flex shopping__item position-relative">
+        <div class="shopping__close">
+          <span class="material-icons">
+            close
+          </span>
+        </div>
+        <div class="flex-shrink-0 me-4">
+          <img
+            src="./assets/images/hot-2.jpg"
+            class="shopping__productImg object-cover"
+            alt="hot-2"
+          />
+        </div>
+        <div class="flex-grow-1 d-flex flex-column justify-content-between">
+          <p class="mb-1">2020 台味設計展</p>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <small class="fw-normal flex-grow-1">全票</small>
+          <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+        </div>
+        <div class="flex-grow-md-1 d-flex align-items-center">
+          <ul
+            class="d-flex flex-column-reverse align-items-center flex-md-row w-100 justify-content-around font-roboto fw-bold fs-5"
+          >
+            <li>
+              <span class="material-icons">
+                remove
+              </span>
+            </li>
+            <li class="px-md-3">01</li>
+            <li>
+              <span class="material-icons">
+                add
+              </span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="d-flex shopping__item position-relative">
+        <div class="shopping__close">
+          <span class="material-icons">
+            close
+          </span>
+        </div>
+        <div class="flex-shrink-0 me-4">
+          <img
+            src="./assets/images/hot-3.jpg"
+            class="shopping__productImg object-cover"
+            alt="hot-3"
+          />
+        </div>
+        <div class="flex-grow-1 d-flex flex-column justify-content-between">
+          <p class="mb-1">2020 台味設計展</p>
+          <p class="mb-1">01 JUN — 31 OCT</p>
+          <small class="fw-normal flex-grow-1">全票</small>
+          <p class="mt-ss mb-0 font-roboto fw-bold fs-5">NT$350</p>
+        </div>
+        <div class="flex-grow-md-1 d-flex align-items-center">
+          <ul
+            class="d-flex flex-column-reverse align-items-center flex-md-row w-100 justify-content-lg-around font-roboto fw-bold fs-5"
+          >
+            <li>
+              <span class="material-icons">
+                remove
+              </span>
+            </li>
+            <li class="px-md-3">01</li>
+            <li>
+              <span class="material-icons">
+                add
+              </span>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="offcanvas-footer shopping__footer mt-mdx2">
+    <div class="d-flex text-white fs-5">
+      <p class="mb-0">小計</p>
+      <p class="mb-0 ms-5">NT$1050</p>
+      <a
+        href="./checkout-1.html"
+        class="btn btn-outline-primary bg-white ms-auto shopping__btn"
+        >前往結帳</a
+      >
+    </div>
+  </div>
+</div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

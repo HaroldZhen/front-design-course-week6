@@ -1,4 +1,127 @@
-<div
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>藝術展覽 - 完成訂購</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body>
+  <div class="topNavBar border-bottom border-gray-600">
+  <div class="container">
+    <header class="my-6 position-relative">
+      <h1 class="logo text-primary text-center">
+        <a href="./index.html" class="text-reset">EXHIBINECTION</a>
+      </h1>
+      <ul
+        class="nav align-items-center position-absolute h-100 my-auto top-0 end-0"
+      >
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link p-0" href="#">Sign in</a>
+        </li>
+        <li class="nav-item d-none d-md-block ms-7">
+          <a class="nav-link p-0" href="#">Sign up</a>
+        </li>
+        <li class="nav-item ms-7">
+          <a
+            class="nav-link p-0 position-relative"
+            href="#"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <span class="material-icons text-black">
+              confirmation_number
+            </span>
+            <span class="shopping__qty">1</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+  </div>
+</div>
+
+  <div class="nav-scroller border-bottom border-gray-600">
+  <ul class="mainMenu nav">
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">音樂</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">戲劇</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss false" href="./product.html">設計</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">藝術</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">美食</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">旅遊</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">電影</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">親子</a>
+    </li>
+    <li class="nav-item me-mdx1">
+      <a class="nav-link mainMenu__link py-ss" href="#">期間限定</a>
+    </li>
+  </ul>
+</div>
+  
+<main>
+  <section>
+    <div class="container pt-2 pt-lg-9">
+      <div class="row">
+        <div class="col-md-8 col-lg-6 mx-auto">
+          <div class="row">
+            <div class="col-12 pb-xxl">
+              <div
+                class="py-5 mt-lg-7 text-primary d-flex flex-column align-items-center justify-content-center"
+              >
+                <span class="material-icons-outlined fs-xxl">
+                  check_circle
+                </span>
+                <h5 class="mb-0 fs-5 fw-normal">完成訂購</h5>
+              </div>
+              <p class="mb-9">您的展覽憑證代碼為：</p>
+              <p class="mb-mdx3 pb-3 pb-md-0 mb-lg-10 fw-normal fs-3 text-center text-primary">
+                qr147352
+              </p>
+              <p class="mb-4">
+                恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~
+                2020/10/31
+                於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。
+              </p>
+            </div>
+            <div class="col-6">
+              <a href="./product.html" class="btn btn-outline-secondary w-100 pt-xs"
+                >繼續瀏覽</a
+              >
+            </div>
+            <div class="col-6">
+              <a href="./index.html" class="btn btn-secondary w-100 pt-xs"
+                >看展去</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <div
   class="shopping__sidebar offcanvas offcanvas-end bg-black"
   tabindex="-1"
   id="offcanvasRight"
@@ -142,3 +265,10 @@
     </div>
   </div>
 </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

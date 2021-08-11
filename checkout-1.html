@@ -104,9 +104,9 @@
                   >全票</small
                 >
               </div>
-              <div class="d-flex checkout__item">
+              <div class="d-flex checkout__item flex-column flex-md-row">
                 <div>
-                  <span class="material-icons checkout__close">
+                  <span class="material-icons lh-sm">
                     close
                   </span>
                 </div>
@@ -126,7 +126,7 @@
                     </span>
                   </li>
                 </ul>
-                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                <p class="mb-0 font-roboto fw-bold fs-5 lh-sm">
                   NT$350
                 </p>
               </div>
@@ -146,9 +146,9 @@
                   >全票</small
                 >
               </div>
-              <div class="d-flex checkout__item">
+              <div class="d-flex checkout__item flex-column flex-md-row">
                 <div>
-                  <span class="material-icons checkout__close">
+                  <span class="material-icons lh-sm">
                     close
                   </span>
                 </div>
@@ -168,7 +168,7 @@
                     </span>
                   </li>
                 </ul>
-                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                <p class="mb-0 font-roboto fw-bold fs-5 lh-sm">
                   NT$350
                 </p>
               </div>
@@ -188,9 +188,9 @@
                   >全票</small
                 >
               </div>
-              <div class="d-flex checkout__item">
+              <div class="d-flex checkout__item flex-column flex-md-row">
                 <div>
-                  <span class="material-icons checkout__close">
+                  <span class="material-icons lh-sm">
                     close
                   </span>
                 </div>
@@ -210,7 +210,7 @@
                     </span>
                   </li>
                 </ul>
-                <p class="mb-0 font-roboto fw-bold fs-5 checkout__price">
+                <p class="mb-0 font-roboto fw-bold fs-5 lh-sm">
                   NT$350
                 </p>
               </div>
@@ -627,7 +627,7 @@
 >
   <div class="modal-dialog modal-dialog-centered">
     <div
-      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary" style="width: 600px;"
+      class="videoModal__content modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
     >
       <div class="modal-header">
         <h5 class="modal-title fs-3 text-primary" id="videoModalLabel">
@@ -641,36 +641,65 @@
         ></button>
       </div>
       <div class="modal-body">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/TXQcLsqUTqs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/TXQcLsqUTqs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZkDPqgwZts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/1ZkDPqgwZts"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/r_PgrPKUjcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/r_PgrPKUjcA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
       </div>
     </div>
   </div>

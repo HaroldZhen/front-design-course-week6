@@ -63,7 +63,7 @@
 </div>
 
   <section
-  class="hero__bg bg-center-cover d-none"
+  class="hero__bg w-100 bg-center-cover d-none"
 >
   <div
     class="container h-100 text-white d-flex align-items-end align-items-md-center pb-xxl pb-md-0"
@@ -74,7 +74,7 @@
         <p class="fs-5 fw-bold mb-4">01 JUN - 31 OCT</p>
         <div class="d-flex">
           <a
-            href="./detail.html"
+            onclick="addTicket('台北當代藝術展')"
             class="btn btn-secondary px-md-10 py-xs me-2 min-w-50 min-w-md-auto"
           >
             購買票券
@@ -157,7 +157,7 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-md-6 ticket__box pt-9 pt-lg-xxl">
-              <ul class="ticket__text d-flex justify-content-center py-5">
+              <ul class="fs-xl fw-bold d-flex justify-content-center py-5">
                 <li>
                   <span class="material-icons">
                     remove
@@ -173,7 +173,7 @@
               <p class="fs-6 mb-0 text-center">張</p>
             </div>
             <div class="col-md-6 ticket__box pt-9 pt-lg-xxl">
-              <p class="ticket__text m-0 py-5 text-center">NT$350</p>
+              <p class="fs-xl fw-bold m-0 py-5 text-center">NT$350</p>
               <p class="fs-6 mb-2 text-center">票種</p>
               <ul class="d-flex justify-content-center">
                 <li class="ticket__link">
@@ -221,14 +221,14 @@
         <div class="col-12 mb-4  mb-lg-7">
           <img
             src="./assets/images/detail-1.jpg"
-            class="object-cover detail__box2"
+            class="object-cover detail__box2 w-100"
             alt="detail-1"
           />
         </div>
         <div class="col-lg-4">
           <img
             src="./assets/images/detail-2.jpg"
-            class="object-cover img-fluid detail__box3"
+            class="object-cover img-fluid detail__box3 w-100"
             alt="detail-2"
           />
         </div>
@@ -727,7 +727,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
 >
   <div class="modal-dialog modal-dialog-centered">
     <div
-      class="modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary" style="width: 600px;"
+      class="videoModal__content modal-content rounded-3 border-3 border-bottom-0 border-start-0 border-end-0 border-secondary"
     >
       <div class="modal-header">
         <h5 class="modal-title fs-3 text-primary" id="videoModalLabel">
@@ -741,36 +741,65 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
         ></button>
       </div>
       <div class="modal-body">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/TXQcLsqUTqs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/TXQcLsqUTqs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZkDPqgwZts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/1ZkDPqgwZts"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="carousel-item">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/r_PgrPKUjcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/r_PgrPKUjcA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
       </div>
     </div>
   </div>

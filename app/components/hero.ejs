@@ -1,5 +1,5 @@
 <section
-  class="hero__bg bg-center-cover <%= current !== 'index' && 'd-none' %>"
+  class="hero__bg w-100 bg-center-cover <%= current !== 'index' && 'd-none' %>"
 >
   <div
     class="container h-100 text-white d-flex align-items-end align-items-md-center pb-xxl pb-md-0"
@@ -10,13 +10,13 @@
         <p class="fs-5 fw-bold mb-4">01 JUN - 31 OCT</p>
         <div class="d-flex">
           <a
-            href="../detail.html"
+            onclick="addTicket('台北當代藝術展')"
             class="btn btn-secondary px-md-10 py-xs me-2 min-w-50 min-w-md-auto"
           >
             購買票券
           </a>
           <a
-            href="../product.html"
+            href="./product.html"
             class="btn btn-outline-white px-md-10 py-xs min-w-50 min-w-md-auto"
           >
             詳細資訊

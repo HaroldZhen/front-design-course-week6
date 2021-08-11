@@ -13,7 +13,6 @@
     background-color: $white;
     transition: background-color 0.15s ease-in-out;
     &:hover {
-      // border-color: $secondary;
       background-color: tint-color($gray-100, 80%);
     }
   }

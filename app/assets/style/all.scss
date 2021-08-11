@@ -1,13 +1,19 @@
+// Font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
-// font-family: 'Noto Sans TC', 'Roboto', sans-serif;
 
+// Vender
 @import './vender/bootstrap';
+
+// Base
 @import './base/reboot';
+
+// Utils
 @import './utils/helper';
 @import './utils/utilities';
 @import './utils/mixin';
 
-// components
+// Components
+@import './components/modal';
 @import './components/date';
 @import './components/shopping';
 @import './components/progressBar';

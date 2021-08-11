@@ -8,11 +8,10 @@
 // scss-docs-start import-stack
 // Configuration
 @import "../../../../node_modules/bootstrap/scss/functions";
-@import "../utils/variables";
-// @import "../../../../node_modules/bootstrap/scss/variables";
+@import "../utils/variables"; // @import "../../../../node_modules/bootstrap/scss/variables";
 @import "../../../../node_modules/bootstrap/scss/mixins";
 @import "../../../../node_modules/bootstrap/scss/utilities";
-@import "../utils/after-utilities";
+@import "../utils/after-utilities"; // Custom Utilities
 
 // Layout & components
 @import "../../../../node_modules/bootstrap/scss/root";

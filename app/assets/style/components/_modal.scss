@@ -1,0 +1,8 @@
+.videoModal{
+  &__content{
+    width: 85vw;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+}

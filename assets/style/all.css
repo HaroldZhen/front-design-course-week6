@@ -13862,7 +13862,8 @@ input::placeholder {
         border-right: 10px #000 solid; } }
 
 .min-h-350 {
-  min-height: 350px; }
+  min-height: 350px;
+  height: 100%; }
 
 .fs-md {
   font-size: 1.75rem; }
@@ -13895,7 +13896,7 @@ input::placeholder {
           flex-direction: column;
   font-size: 1.25rem;
   font-weight: 700; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
     .date__period {
       font-size: 1rem;
       -webkit-box-orient: horizontal;
@@ -13909,7 +13910,7 @@ input::placeholder {
 
 .date__box {
   width: 39px; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
     .date__box {
       width: auto; } }
 

@@ -415,6 +415,7 @@
               id="loginEmail"
               aria-describedby="emailHelp"
               placeholder="請輸入你的電子信箱"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -424,6 +425,7 @@
               class="form-control"
               id="loginPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="current-password"
             />
           </div>
           <a href="#" data-bs-target="#forgotPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary text-decoration-none my-3 fw-light"
@@ -499,6 +501,7 @@
               class="form-control"
               id="registerEmail"
               placeholder="請輸入你的電子郵件"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -513,7 +516,7 @@
           <div class="mb-3">
             <label for="registerBday" class="form-label">生日</label>
             <input
-              type="email"
+              type="date"
               class="form-control"
               id="registerBday"
               placeholder="請輸入你的生日"
@@ -526,6 +529,7 @@
               class="form-control"
               id="registerPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="new-password"
             />
           </div>
           <div class="mb-3">
@@ -537,6 +541,7 @@
               class="form-control"
               id="registerPasswordCheck"
               placeholder="再一次輸入密碼"
+              autocomplete="new-password"
             />
           </div>
           <button

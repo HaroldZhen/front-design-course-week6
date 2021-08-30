@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" >
   <link rel="stylesheet" href="./assets/style/all.css" />
 </head>
 
@@ -61,7 +64,9 @@
 </div>
 
   <div class="nav-scroller border-bottom border-gray-600">
-  <ul class="mainMenu nav">
+  <ul
+    class="mainMenu nav"
+  >
     <li class="nav-item me-mdx1">
       <a class="nav-link mainMenu__link py-ss" href="./product.html">音樂</a>
     </li>
@@ -69,7 +74,11 @@
       <a class="nav-link mainMenu__link py-ss" href="./product.html">戲劇</a>
     </li>
     <li class="nav-item me-mdx1">
-      <a class="nav-link mainMenu__link py-ss false" href="./product.html">設計</a>
+      <a
+        class="nav-link mainMenu__link py-ss false"
+        href="./product.html"
+        >設計</a
+      >
     </li>
     <li class="nav-item me-mdx1">
       <a class="nav-link mainMenu__link py-ss" href="./product.html">藝術</a>
@@ -87,15 +96,23 @@
       <a class="nav-link mainMenu__link py-ss" href="./product.html">親子</a>
     </li>
     <li class="nav-item me-mdx1">
-      <a class="nav-link mainMenu__link py-ss" href="./product.html">期間限定</a>
+      <a class="nav-link mainMenu__link py-ss" href="./product.html"
+        >期間限定</a
+      >
     </li>
   </ul>
 </div>
+
   
 <main>
   <section>
-    <div class="container pt-2 pt-lg-9">
-      <div class="row">
+    <div class="container pt-2 pt-lg-9 overflow-hidden">
+      <div
+        class="row"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="300"
+      >
         <div class="col-md-8 col-lg-6 mx-auto">
           <div class="row">
             <div class="col-12 pb-xxl">
@@ -108,7 +125,9 @@
                 <h5 class="mb-0 fs-5 fw-normal">完成訂購</h5>
               </div>
               <p class="mb-9">您的展覽憑證代碼為：</p>
-              <p class="mb-mdx3 pb-3 pb-md-0 mb-lg-10 fw-normal fs-3 text-center text-primary">
+              <p
+                class="mb-mdx3 pb-3 pb-md-0 mb-lg-10 fw-normal fs-3 text-center text-primary"
+              >
                 qr147352
               </p>
               <p class="mb-4">
@@ -118,7 +137,9 @@
               </p>
             </div>
             <div class="col-6">
-              <a href="./product.html" class="btn btn-outline-secondary w-100 pt-xs"
+              <a
+                href="./product.html"
+                class="btn btn-outline-secondary w-100 pt-xs"
                 >繼續瀏覽</a
               >
             </div>
@@ -310,6 +331,7 @@
               id="loginEmail"
               aria-describedby="emailHelp"
               placeholder="請輸入你的電子信箱"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -319,6 +341,7 @@
               class="form-control"
               id="loginPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="current-password"
             />
           </div>
           <a href="#" data-bs-target="#forgotPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary text-decoration-none my-3 fw-light"
@@ -394,6 +417,7 @@
               class="form-control"
               id="registerEmail"
               placeholder="請輸入你的電子郵件"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -408,7 +432,7 @@
           <div class="mb-3">
             <label for="registerBday" class="form-label">生日</label>
             <input
-              type="email"
+              type="date"
               class="form-control"
               id="registerBday"
               placeholder="請輸入你的生日"
@@ -421,6 +445,7 @@
               class="form-control"
               id="registerPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="new-password"
             />
           </div>
           <div class="mb-3">
@@ -432,6 +457,7 @@
               class="form-control"
               id="registerPasswordCheck"
               placeholder="再一次輸入密碼"
+              autocomplete="new-password"
             />
           </div>
           <button
@@ -601,6 +627,9 @@
 </div>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>

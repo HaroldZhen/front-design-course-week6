@@ -11,6 +11,8 @@
   <script src="https://kit.fontawesome.com/d1bdac5eaf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" >
   <link rel="stylesheet" href="./assets/style/all.css" />
   
 </head>
@@ -68,7 +70,12 @@
   <div
     class="container h-100 text-white d-flex align-items-end align-items-md-center pb-xxl pb-md-0"
   >
-    <div class="row flex-grow-1">
+    <div
+      class="row flex-grow-1"
+      data-aos="zoom-in-up"
+      data-aos-easing="linear"
+      data-aos-duration="300"
+    >
       <div class="col-md-11 ms-auto">
         <h2 class="mb-2">台北當代藝術展</h2>
         <p class="fs-5 fw-bold mb-4">01 JUN - 31 OCT</p>
@@ -92,7 +99,9 @@
 </section>
 
   <div class="nav-scroller border-bottom border-gray-600">
-  <ul class="mainMenu nav">
+  <ul
+    class="mainMenu nav"
+  >
     <li class="nav-item me-mdx1">
       <a class="nav-link mainMenu__link py-ss" href="./product.html">音樂</a>
     </li>
@@ -100,7 +109,11 @@
       <a class="nav-link mainMenu__link py-ss" href="./product.html">戲劇</a>
     </li>
     <li class="nav-item me-mdx1">
-      <a class="nav-link mainMenu__link py-ss false" href="./product.html">設計</a>
+      <a
+        class="nav-link mainMenu__link py-ss false"
+        href="./product.html"
+        >設計</a
+      >
     </li>
     <li class="nav-item me-mdx1">
       <a class="nav-link mainMenu__link py-ss" href="./product.html">藝術</a>
@@ -118,15 +131,26 @@
       <a class="nav-link mainMenu__link py-ss" href="./product.html">親子</a>
     </li>
     <li class="nav-item me-mdx1">
-      <a class="nav-link mainMenu__link py-ss" href="./product.html">期間限定</a>
+      <a class="nav-link mainMenu__link py-ss" href="./product.html"
+        >期間限定</a
+      >
     </li>
   </ul>
 </div>
+
   
+<div class="loading">
+  <div class="loader-inner pacman"></div>
+ </div>
 <main>
-  <section class="container pt-md-xl pt-mdx2">
+  <section class="container pt-md-xl pt-mdx2 overflow-hidden">
     <h2 class="mb-2 mb-md-5">熱門特展</h2>
-    <div class="card mb-3 border border-0 mb-4 mb-md-mdx2">
+    <div
+      class="card mb-3 border border-0 mb-4 mb-md-mdx2"
+      data-aos="flip-up"
+      data-aos-easing="linear"
+      data-aos-duration="300"
+    >
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
@@ -156,7 +180,10 @@
                   >
                     購買票券
                   </a>
-                  <button onclick="favoriteShow()" class="btn btn-outline-primary py-xs px-4">
+                  <button
+                    onclick="favoriteShow()"
+                    class="btn btn-outline-primary py-xs px-4"
+                  >
                     收藏展覽
                   </button>
                 </div>
@@ -179,7 +206,12 @@
         </div>
       </div>
     </div>
-    <div class="card mb-3 border border-0 mb-4 mb-md-mdx2">
+    <div
+      class="card mb-3 border border-0 mb-4 mb-md-mdx2"
+      data-aos="flip-up"
+      data-aos-easing="linear"
+      data-aos-duration="300"
+    >
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
@@ -209,7 +241,10 @@
                   >
                     購買票券
                   </a>
-                  <button onclick="favoriteShow()" class="btn btn-outline-primary py-xs px-4">
+                  <button
+                    onclick="favoriteShow()"
+                    class="btn btn-outline-primary py-xs px-4"
+                  >
                     收藏展覽
                   </button>
                 </div>
@@ -232,7 +267,12 @@
         </div>
       </div>
     </div>
-    <div class="card mb-3 border border-0 mb-4 mb-md-mdx2">
+    <div
+      class="card mb-3 border border-0 mb-4 mb-md-mdx2"
+      data-aos="flip-up"
+      data-aos-easing="linear"
+      data-aos-duration="300"
+    >
       <div class="row g-md-0 bg-light py-5 py-md-0">
         <div class="col-md-4 mb-2 mb-md-0">
           <div
@@ -262,7 +302,10 @@
                   >
                     購買票券
                   </a>
-                  <button onclick="favoriteShow()" class="btn btn-outline-primary py-xs px-4">
+                  <button
+                    onclick="favoriteShow()"
+                    class="btn btn-outline-primary py-xs px-4"
+                  >
                     收藏展覽
                   </button>
                 </div>
@@ -286,12 +329,22 @@
       </div>
     </div>
   </section>
-  <section class="mt-5 mt-md-xl">
-    <div class="container">
+  <section class="mt-5 mt-md-xl overflow-hidden">
+    <div
+      class="container"
+      data-aos="fade-left"
+      data-aos-easing="linear"
+      data-aos-duration="600"
+    >
       <h2 class="mb-2 mb-md-5 fw-bold">直播回顧</h2>
       <div class="text-white liveReview__bg bg-center-cover w-100 z-index-100">
         <div class="row h-100">
-          <div class="col-md-7 col-lg-5">
+          <div
+            class="col-md-7 col-lg-5"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+          >
             <div class="liveReview__cover h-100 d-flex flex-column">
               <h3 class="fs-md mb-md-7">
                 <span class="fw-bold">開幕對談</span>
@@ -324,8 +377,13 @@
   </section>
 </main>
 
-  <section class="mt-5 mt-md-xl">
-  <div class="container">
+  <section class="mt-5 mt-md-xl overflow-hidden">
+  <div
+    class="container"
+    data-aos="zoom-in"
+    data-aos-easing="linear"
+    data-aos-duration="500"
+  >
     <h2 class="mb-2 mb-md-5 fw-bold">猜你也喜歡...</h2>
     <div class="row">
       <div class="col-lg-11 offset-lg-1 overflow-hidden">
@@ -336,56 +394,79 @@
             <div class="swiper-slide position-relative">
               <div>
                 <div class="link__image mb-md-1">
-                  <img src="./assets/images/mustlink-1.jpg" class="image-box object-fit-cover" alt="mustlink-1" />
+                  <img
+                    src="./assets/images/mustlink-1.jpg"
+                    class="image-box object-fit-cover"
+                    alt="mustlink-1"
+                  />
                 </div>
-                <h3 class="fs-5 fw-bold mb-1"><a href="./detail.html" class="text-reset stretched-link">2020 台味設計展</a></h3>
+                <h3 class="fs-5 fw-bold mb-1">
+                  <a href="./detail.html" class="text-reset stretched-link"
+                    >2020 台味設計展</a
+                  >
+                </h3>
                 <p class="mb-2 fs-5">$350</p>
               </div>
             </div>
             <div class="swiper-slide position-relative">
               <div>
                 <div class="mb-md-1">
-                  <img src="./assets/images/mustlink-2.jpg" class="image-box object-fit-cover" alt="mustlink-2" />
+                  <img
+                    src="./assets/images/mustlink-2.jpg"
+                    class="image-box object-fit-cover"
+                    alt="mustlink-2"
+                  />
                 </div>
-                <h3 class="fs-5 fw-bold mb-1"><a href="./detail.html" class="text-reset stretched-link">No.22 線上設計展</a></h3>
+                <h3 class="fs-5 fw-bold mb-1">
+                  <a href="./detail.html" class="text-reset stretched-link"
+                    >No.22 線上設計展</a
+                  >
+                </h3>
                 <p class="mb-2 fs-5">$350</p>
               </div>
             </div>
             <div class="swiper-slide position-relative">
               <div>
                 <div class="mb-md-1">
-                  <img src="./assets/images/mustlink-3.jpg" class="image-box object-fit-cover" alt="mustlink-3" />
+                  <img
+                    src="./assets/images/mustlink-3.jpg"
+                    class="image-box object-fit-cover"
+                    alt="mustlink-3"
+                  />
                 </div>
-                <h3 class="fs-5 fw-bold mb-1"><a href="./detail.html" class="text-reset stretched-link">高雄設計節</a></h3>
+                <h3 class="fs-5 fw-bold mb-1">
+                  <a href="./detail.html" class="text-reset stretched-link"
+                    >高雄設計節</a
+                  >
+                </h3>
                 <p class="mb-2 fs-5">$350</p>
               </div>
             </div>
           </div>
-          <!-- swiper pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
     </div>
   </div>
 </section>
+
   <section class="h-400x bg-center-cover mt-5  mt-md-xl"
-style="background-image: url('./assets/images/subscription-bg.jpg');">
-<div class="container h-100">
-  <div class="row h-100 flex-column justify-content-end pb-mdx4">
-    <div class="col-md-5 text-white mb-5 mb-md-3">
-      <p class="fs-3 fs-md-2 mb-md-3 lh-base">想收到展覽的最新消息嗎？<br />快訂閱我們！</p>
-    </div>
-    <div class="col-md-4">
-      <div class="input-group">
-        <input type="text" class="form-control py-3" placeholder="輸入您的電子信箱" aria-label="subscription-email">
-        <div class="col-4">
-          <button type="button" onclick="subscriptionMsg()" class="btn btn-secondary py-3 w-100">訂閱</button>
-          </button>
+  style="background-image: url('./assets/images/subscription-bg.jpg');">
+  <div class="container h-100 overflow-hidden">
+    <div class="row h-100 flex-column justify-content-end pb-mdx4" data-aos="zoom-in" data-aos-easing="linear"
+      data-aos-duration="500">
+      <div class="col-md-5 text-white mb-5 mb-md-3">
+        <p class="fs-3 fs-md-2 mb-md-3 lh-base">想收到展覽的最新消息嗎？<br />快訂閱我們！</p>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control py-3" placeholder="輸入您的電子信箱" aria-label="subscription-email">
+          <div class="col-4">
+            <button type="button" onclick="subscriptionMsg()" class="btn btn-secondary py-3 w-100">訂閱</button>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
   <footer class="footer">
   <div class="container py-4 py-md-6">
@@ -602,6 +683,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
               id="loginEmail"
               aria-describedby="emailHelp"
               placeholder="請輸入你的電子信箱"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -611,6 +693,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
               class="form-control"
               id="loginPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="current-password"
             />
           </div>
           <a href="#" data-bs-target="#forgotPasswordModal" data-bs-toggle="modal" data-bs-dismiss="modal" class="link-primary text-decoration-none my-3 fw-light"
@@ -686,6 +769,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
               class="form-control"
               id="registerEmail"
               placeholder="請輸入你的電子郵件"
+              autocomplete="username"
             />
           </div>
           <div class="mb-3">
@@ -700,7 +784,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
           <div class="mb-3">
             <label for="registerBday" class="form-label">生日</label>
             <input
-              type="email"
+              type="date"
               class="form-control"
               id="registerBday"
               placeholder="請輸入你的生日"
@@ -713,6 +797,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
               class="form-control"
               id="registerPassword"
               placeholder="請輸入你的密碼"
+              autocomplete="new-password"
             />
           </div>
           <div class="mb-3">
@@ -724,6 +809,7 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
               class="form-control"
               id="registerPasswordCheck"
               placeholder="再一次輸入密碼"
+              autocomplete="new-password"
             />
           </div>
           <button
@@ -895,6 +981,8 @@ style="background-image: url('./assets/images/subscription-bg.jpg');">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
 

@@ -1,4 +1,15 @@
-console.log('Hello!');
+$(function () {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 100);
+  $(".loader").loaders();
+  $('body').css('overflow', 'hidden');
+  setTimeout(function () {
+    $('body').css('overflow', 'auto');
+    $(".loading").fadeOut(600);
+  }, 800);
+});
+AOS.init();
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   slidesPerView: 'auto',

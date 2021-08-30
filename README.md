@@ -25,6 +25,7 @@
 - [Bootstrap5 v5.0.2](https://getbootstrap.com/)
 - [Swiper v6.8.1](https://swiperjs.com/)
 - [Sweetalert2 v11](https://sweetalert2.github.io/)
+- [AOS.js](https://michalsnik.github.io/aos/)
 - Gulp v4.0.2
 
 ## 元件：

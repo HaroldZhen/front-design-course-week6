@@ -6,13 +6,13 @@
 ## 簡介
 主要為切版練習
 ## 頁面：
-- [首頁 index](https://haroldzhen.github.io/front-design-course-week6/)
-- [產品 product](https://haroldzhen.github.io/front-design-course-week6/product.html)
-- [產品明細 detail](https://haroldzhen.github.io/front-design-course-week6/detail.html)
-- [結帳-購物車 Step1](https://haroldzhen.github.io/front-design-course-week6/checkout-1.html)
-- [結帳-基本資料 Step2](https://haroldzhen.github.io/front-design-course-week6/checkout-2.html)
-- [結帳-線上付款 Step3](https://haroldzhen.github.io/front-design-course-week6/checkout-3.html)
-- [結帳完成 Step4](https://haroldzhen.github.io/front-design-course-week6/checkout-4.html)
+- [首頁 index](https://exhibinection.haroldzhenidv.me/)
+- [產品 product](https://exhibinection.haroldzhenidv.me/product.html)
+- [產品明細 detail](https://exhibinection.haroldzhenidv.me/detail.html)
+- [結帳-購物車 Step1](https://exhibinection.haroldzhenidv.me/checkout-1.html)
+- [結帳-基本資料 Step2](https://exhibinection.haroldzhenidv.me/checkout-2.html)
+- [結帳-線上付款 Step3](https://exhibinection.haroldzhenidv.me/checkout-3.html)
+- [結帳完成 Step4](https://exhibinection.haroldzhenidv.me/checkout-4.html)
 
 
 ### 主要練習

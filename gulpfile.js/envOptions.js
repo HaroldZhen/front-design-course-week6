@@ -3,6 +3,7 @@ const distPath = './dist';
 const nodePath = './node_modules';
 
 let envOptions = {
+  ghPageCustomDomain: 'exhibinection.haroldzhenidv.me',
   string: 'env',
   default: {
     env: 'dev',

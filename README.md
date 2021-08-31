@@ -1,6 +1,6 @@
 # 第六週 - 藝術展覽
 
-![Demo](https://i.imgur.com/itZyIpf.jpg)
+![Demo](https://i.imgur.com/NxAPEeI.png)
 
 
 ## 簡介
